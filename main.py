@@ -5,7 +5,14 @@
 
 
 def find_anagram(word, anagram):
-    # [assignment] Add your code here
+    word= sorted(word)
+    anagram= sorted(anagram)
+    sorted_word = "".join(word).lower()
+    sorted_anagram = "".join(anagram).lower()
 
-    return True
+    if sorted_word == sorted_anagram:
+        return True
+    else:
+        return False
+print(find_anagram("Akolade Quam"," Akolade"))
 
